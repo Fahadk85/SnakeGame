@@ -22,3 +22,18 @@ let score = 0;
 
 window.addEventListener("keydown", changeDirection);
 resetBtn.addEventListener("click", resetGame);
+
+
+gameStart();
+
+function startGame(){};
+function nextTick(){};
+function clearBoard(){};
+function createFood(){};
+function drawFood(){};
+function moveSnake(){};
+function drawSnake(){};
+function changeDirection(){};
+function checkGameOver(){};
+function displayGameOver(){};
+function resetGame(){};
