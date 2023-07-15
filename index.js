@@ -48,7 +48,10 @@ function nextTick(){
         displayGameOver();
     }
 };
-function clearBoard(){};
+function clearBoard(){
+    ctx.fillStyle = boardBackGround;
+    ctx.fillRect(0,0,gameWidth,gameHeight);
+};
 function createFood(){
     function randomFood(min,max){
         const randNum = Math.round((Math.random() * (max - min) + min) / unitSize) * unitSize; 
