@@ -57,7 +57,7 @@ function nextTick(){
 };
 function clearBoard(){
     ctx.fillStyle = boardBackGround;
-    ctx.fillRect(0,0,gameWidth,gameHeight);
+    ctx.fillRect(0, 0, gameWidth, gameHeight);
 };
 function createFood(){
     function randomFood(min,max){
@@ -71,7 +71,17 @@ function drawFood(){
     ctx.fillSytle = foodColor;
     ctx.fillRect(foodX, foodY, unitSize, unitSize);
 };
-function moveSnake(){};
+function moveSnake(){
+    const head = {x: snake[0].x + xVelocity,
+                  y: snake[0].y + yVelocity};
+    snake.unshift(head);
+    // if food is eaten
+    if(snake[0].x == foodX && snake[0].y == foodY){
+        score += 1;
+        scoreText.textContent = score;
+        createFood();
+    }
+};
 function drawSnake(){
     ctx.fillStyle = snakeColor;
     ctx.strokeStyle = snakeBorder;
