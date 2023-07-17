@@ -8,3 +8,4 @@ const boardBackground = "white";
 const snakeColor = "lightgreen";
 const snakeBorder = "black";
 const foodColor = "red";
+const unitSize = 25;
