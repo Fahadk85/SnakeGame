@@ -12,3 +12,6 @@ const unitSize = 25;
 let running = false;
 let xVelocity = unitSize;
 let yVelocity = 0;
+let foodX;
+let foodY;
+let score = 0;
