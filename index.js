@@ -29,7 +29,13 @@ resetBtn.addEventListener("click", resetGame);
 gameStart();
 
 
-function gameStart(){};
+function gameStart(){
+    running = true;
+    scoreText.textContent = score;
+    createFood();
+    drawFood();
+    nextTick()
+};
 function nextTick(){};
 function clearBoard(){};
 function createFood(){
