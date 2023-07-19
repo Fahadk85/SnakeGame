@@ -142,5 +142,11 @@ function checkGameOver(){
         }
     }
 };
-function displayGameOver(){};
+function displayGameOver(){
+    ctx.font = "50px Permanent marker";
+    ctx.fillStyle = "black";
+    ctx.textAlign = "center";
+    ctx.fillText("GAME OVER!", gameWidth / 2, gameHeight / 2);
+    running = false;
+};
 function resetGame(){};
